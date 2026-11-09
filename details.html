@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Amazon Returns</title>
+<title>Amazon Returns: Details</title>
 <style>
 body{margin:0;background:#f4f6f8;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1f2933;font-size:18px;line-height:1.35}
 .w{max-width:700px;margin:auto;padding:14px}
@@ -19,13 +19,19 @@ h2{font-size:19px;background:#e1e9f2;padding:10px 12px;border-radius:8px;margin:
 .m{margin-top:10px;padding:10px;border:1px dashed #c0c8d0;border-radius:8px;color:#8a4600;background:#fffaf0;font-size:15px}
 label{display:inline-flex;align-items:center;gap:6px;font-size:14px;margin-top:10px;padding:6px 10px;border:1px solid #cfd6dd;border-radius:6px;background:#f7f9fb}
 input{width:20px;height:20px;margin:0}
-</style></head><body><div class="w">
-<h1>Amazon Returns</h1><p><a href="index.html">Back to list</a></p>
+a.back{display:inline-block;margin:2px 0 8px;color:#1f6feb;font-weight:600;text-decoration:none}
+</style>
+<script src="files.js"></script>
+</head><body><div class="w">
+<h1>Amazon Returns</h1>
+<a class="back" href="index.html">&larr; Back to list</a>
 <div id="app"></div>
 </div>
 <script>
 var T={B:"BOX",N:"NO BOX",P:"PRINT LABEL",Q:"QR CODE",L:"NO LABEL NEEDED",S:"PACK SECURELY"};
 var WF="Keep in original packaging.";
+var KO="Keep in original packaging.";
+var UQ="Remove any other shipping labels.";
 var D=[
 ["UPS HOME PICKUP",[
  ["VELOHEIM 2-Tier Round Bamboo Side Table","114-4827451-0968235","BL","Driver brings the label. Adult must be home.",[],"No QR needed."]]],
@@ -39,13 +45,18 @@ var D=[
  ["Mifoci 4 Pack Stainless","114-6916253-1729029","NQ",WF,[["Open QR code","metal-containers.jpeg"]]],
  ["YSAGi Desk Protector + Amazer Shower Hooks","114-3849622-9712262 / 114-3043692-9661850","NQ","One return, one QR for both items. "+WF,[]],
  ["Bear Mini Rice Cooker (replacement)","114-8721578-4227465","NQ",WF,[["Open QR code","rice-cooker.jpeg"]]],
- ["Ice Packs","","NQ",WF,[["Open file","ice-packs.pdf"]]]]],
+ ["Ice Packs","","NQ",WF,[["Open file","ice-packs.pdf"]]],
+ ["ESCO LITE Black Light (UV flashlight)","","NQ","Nothing else needed.",[]],
+ ["Anker USB C Hub","","NQ","Nothing else needed.",[]],
+ ["FELIWAY Cat Calming Diffuser Kit","","NQ","Nothing else needed.",[]],
+ ["Amazon Basics Drinking Glasses, 11 oz, 4-Piece","","NQ","Nothing else needed.",[]]]],
 ["UPS, ANY LOCATION (box + QR)",[
- ["Flash Furniture Mindy Kids Navy","114-4765351-7761851","BQ","Remove any other shipping labels.",[["Open QR code","table-chairs.jpeg"]]],
- ["Cuisinart Chef's Classic Stainless","114-9665192-6715416","BQ","Remove any other shipping labels.",[["Open QR code","pots-and-pans.jpeg"]]],
- ["Can Opener, 3-In-1","114-6916253-1729029","BQ","Remove any other shipping labels.",[["Open QR code","can-opener.jpeg"]]],
- ["Toddleroo by North States","114-1744150-0169013","BQ","Remove any other shipping labels.",[]],
- ["Training Mat","","BQL","UPS. Box + QR only, no label.",[["Open QR code","training-mat.jpeg"]]]]],
+ ["Flash Furniture Mindy Kids Navy","114-4765351-7761851","BQ",UQ,[["Open QR code","table-chairs.jpeg"]]],
+ ["Cuisinart Chef's Classic Stainless","114-9665192-6715416","BQ",UQ,[["Open QR code","pots-and-pans.jpeg"]]],
+ ["Can Opener, 3-In-1","114-6916253-1729029","BQ",UQ,[["Open QR code","can-opener.jpeg"]]],
+ ["Toddleroo by North States","114-1744150-0169013","BQ",UQ,[]],
+ ["EverGrace Cross Stitch","114-4719297-4513863","BQL","Box + QR only, no label. "+UQ,[]],
+ ["Training Mat","","BQL","Box + QR only, no label. "+UQ,[["Open QR code","training-mat.jpeg"]]]]],
 ["UPS DROP-OFF (box + PRINTED label)",[
  ["Amazon Basics 4 Slice Toaster","114-9716399-3885021","BP","Tape label flat on the box. Two label files exist (one per toaster): check the order # on the label.",[["Open label 1","black-toaster-label.pdf"],["Open label 2","toaster.pdf"]]],
  ["Cuisinart 4-Slice Stainless","114-6686067-8025011","BP","Tape label flat on the box. Two label files exist (one per toaster): check the order # on the label.",[["Open label 1","black-toaster-label.pdf"],["Open label 2","toaster.pdf"]]]]],
@@ -54,38 +65,43 @@ var D=[
  ["Bounty Paper Towels","114-5757847-5721040","BQ","Must be The UPS Store.",[]]]],
 ["UPS, RETURN TO SELLER",[
  ["Minnetonka Men's Sheepskin","114-8933077-6177004","PS","Print the label from the Amazon email.",[],"Label not in folder."]]],
-["STAPLES",[
- ["EverGrace Cross Stitch","114-4719297-4513863","NQ",WF,[]]]],
-["KOHL'S (no box)",[
- ["WDCOZY Cloud Soft Quilt Set","114-4124702-6240256","NQ",WF,[["Open QR code","blue-blanket.jpeg"]]],
- ["Dish Rack","","NQL","Kohl's. QR only, no label. "+WF,[["Open QR code","dish-rack.jpeg"]]]]],
+["KOHL'S (no box, no label)",[
+ ["WDCOZY Cloud Soft Quilt Set","114-4124702-6240256","NQL",KO,[["Open QR code","blue-blanket.jpeg"]]],
+ ["Dish Rack","","NQL",KO,[["Open QR code","dish-rack.jpeg"]]],
+ ["THINDUST Winter Thermal Skull Cap","","NQL",KO,[]]]],
 ["TO VERIFY",[
- ["Marscamd Motorcycle Dry Bag","114-5394424-8116219","NQ","The UPS Store, 10332 Main St, Fairfax VA. No drop-off confirmation found.",[]]]],
-["OTHER FILES (not matched to an item yet)",[
- ["Brown bedding","","","",[["Open file","brown-bedding.png"]]]]]
+ ["Marscamd Motorcycle Dry Bag","114-5394424-8116219","NQ","The UPS Store, 10332 Main St, Fairfax VA. No drop-off confirmation found.",[]]]]
 ];
-var K="returns-links-v1",S={};
+var ALL=(typeof ALLFILES!=="undefined")?ALLFILES:[];
+var used={};
+D.forEach(function(g){g[1].forEach(function(it){it[4].forEach(function(f){used[f[1]]=1})})});
+var other=ALL.filter(function(f){return !used[f]&&f!=="files.js"});
+if(other.length){D.push(["OTHER FILES (not matched to an item)",other.map(function(f){return [f,"","","",[["Open file",f]]]})]);}
+var K="returns-links-v2",S={};
 try{S=JSON.parse(localStorage.getItem(K)||"{}")||{}}catch(e){}
 function esc(t){return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
-var h="",n=0;
+var h="";
 D.forEach(function(g){
+ var isOther=g[0].indexOf("OTHER")===0;
  h+="<h2>"+g[0]+"</h2>";
  g[1].forEach(function(it){
-  var i=n++,d=S[i];
-  h+='<div class="c'+(d?" done":"")+'" data-i="'+i+'"><div class="n">'+esc(it[0])+'</div>'+
+  var key=encodeURIComponent(it[0]),d=S[it[0]];
+  var fs=it[4].filter(function(f){return ALL.indexOf(f[1])>=0});
+  h+='<div class="c'+(d?" done":"")+'" data-k="'+key+'"><div class="n">'+esc(it[0])+'</div>'+
    (it[1]?'<div class="o">Order '+esc(it[1])+'</div>':"")+
    '<div class="tg">'+it[2].split("").map(function(c){return '<span class="t t'+c+'">'+T[c]+'</span>'}).join("")+'</div>'+
    (it[3]?'<div class="x">'+esc(it[3])+'</div>':"");
-  if(it[4].length){it[4].forEach(function(f){h+='<a class="b" href="files/'+f[1]+'">'+f[0]+'</a>'})}
-  else if(g[0].indexOf("OTHER")<0){h+='<div class="m">'+(it[5]||"No QR file yet.")+'</div>'}
-  if(g[0].indexOf("OTHER")<0){h+='<label><input type="checkbox"'+(d?" checked":"")+'> Returned</label>'}
+  if(fs.length){fs.forEach(function(f){h+='<a class="b" href="files/'+f[1]+'">'+f[0]+'</a>'})}
+  else if(!isOther){h+='<div class="m">'+(it[5]||"No QR file yet.")+'</div>'}
+  if(!isOther){h+='<label><input type="checkbox"'+(d?" checked":"")+'> Returned</label>'}
   h+='</div>';
  });
 });
 var app=document.getElementById("app");app.innerHTML=h;
 app.addEventListener("change",function(e){
  var c=e.target.closest(".c");if(!c)return;
- S[c.getAttribute("data-i")]=e.target.checked;c.classList.toggle("done",e.target.checked);
+ var nm=decodeURIComponent(c.getAttribute("data-k"));
+ S[nm]=e.target.checked;c.classList.toggle("done",e.target.checked);
  try{localStorage.setItem(K,JSON.stringify(S))}catch(x){}
 });
 </script></body></html>

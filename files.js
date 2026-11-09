@@ -1,0 +1,1 @@
+var ALLFILES=["10-sets.jpeg","black-toaster-label.pdf","blue-blanket.jpeg","bowl.jpeg","brown-bedding.png","can-opener.jpeg","dish-rack.jpeg","green-toaster.png","ice-packs.pdf","keyboard.jpeg","metal-containers.jpeg","pots-and-pans.jpeg","rice-cooker.jpeg","table-chairs.jpeg","thetchry.jpeg","toaster.pdf","training-mat.jpeg"];
