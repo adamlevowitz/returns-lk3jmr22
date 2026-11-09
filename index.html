@@ -4,88 +4,65 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Amazon Returns</title>
 <style>
-body{margin:0;background:#f4f6f8;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1f2933;font-size:18px;line-height:1.35}
+body{margin:0;background:#f4f6f8;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1f2933;font-size:18px;line-height:1.3}
 .w{max-width:700px;margin:auto;padding:14px}
-h1{font-size:24px;margin:6px 0 4px}
-h2{font-size:19px;background:#e1e9f2;padding:10px 12px;border-radius:8px;margin:24px 0 8px}
-.c{background:#fff;border:1px solid #d5dbe1;border-radius:10px;padding:12px;margin:8px 0}
-.c.done{background:#eef8f1;border-color:#b7dfc4}.c.done .n{text-decoration:line-through;color:#6b7785}
-.n{font-weight:600}.o{font-family:Menlo,monospace;font-size:14px;color:#52606d;margin-top:2px}
-.tg{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px}
-.t{font-size:13px;font-weight:700;padding:3px 9px;border-radius:6px}
-.tB{background:#dbe7ff;color:#1a3f9c}.tN{background:#d9f2e0;color:#14662b}.tP{background:#ffdcdc;color:#a3190f}.tQ{background:#ead9fb;color:#5b2796}.tL{background:#fde9cc;color:#8a4600}.tS{background:#fff1b8;color:#7a5b00}
-.x{color:#52606d;font-size:15px;margin-top:6px}
-.b{display:block;text-align:center;background:#1f6feb;color:#fff;text-decoration:none;font-weight:700;padding:14px;border-radius:10px;margin-top:10px;font-size:18px}
-.m{margin-top:10px;padding:10px;border:1px dashed #c0c8d0;border-radius:8px;color:#8a4600;background:#fffaf0;font-size:15px}
-label{display:inline-flex;align-items:center;gap:6px;font-size:14px;margin-top:10px;padding:6px 10px;border:1px solid #cfd6dd;border-radius:6px;background:#f7f9fb}
-input{width:20px;height:20px;margin:0}
+h1{font-size:24px;margin:6px 0 10px}
+a.b{display:block;text-align:center;background:#1f6feb;color:#fff;text-decoration:none;font-weight:700;padding:14px;border-radius:10px;margin:0 0 14px}
+.r{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#fff;border:1px solid #d5dbe1;border-radius:10px;padding:11px 12px;margin:6px 0}
+.n{font-weight:600}
+.l{flex:none;font-size:13px;font-weight:700;padding:4px 9px;border-radius:6px;text-align:right;max-width:46%}
+.WF{background:#d9f2e0;color:#14662b}
+.UPS{background:#dbe7ff;color:#1a3f9c}
+.UPSL{background:#ffdcdc;color:#a3190f}
+.UPSS{background:#ead9fb;color:#5b2796}
+.ST{background:#fff1b8;color:#7a5b00}
+.KO{background:#fde9cc;color:#8a4600}
+.PK{background:#e0f2f1;color:#00695c}
+.VF{background:#eceff1;color:#455a64}
 </style></head><body><div class="w">
 <h1>Amazon Returns</h1>
+<a class="b" href="details.html">QR codes &amp; details</a>
 <div id="app"></div>
 </div>
 <script>
-var T={B:"BOX",N:"NO BOX",P:"PRINT LABEL",Q:"QR CODE",L:"NO LABEL NEEDED",S:"PACK SECURELY"};
-var WF="Keep in original packaging.";
-var D=[
-["UPS HOME PICKUP",[
- ["VELOHEIM 2-Tier Round Bamboo Side Table","114-4827451-0968235","BL","Driver brings the label. Adult must be home.",[],"No QR needed."]]],
-["WHOLE FOODS (no box)",[
- ["Apple Magic Keyboard","114-6793649-2600252","NQ","Leave the battery inside. "+WF,[["Open QR code","keyboard.jpeg"]]],
- ["10 Sets Glass Food Containers","114-7675092-6739443","NQ",WF,[["Open QR code","10-sets.jpeg"]]],
- ["THETCHRY Walnut Cutting Boards","114-3603030-0937850","NQ",WF,[["Open QR code","thetchry.jpeg"]]],
- ["Amazon Basics Mint Dental Flosses","114-6129825-5208243","NQ",WF,[]],
- ["MALACASA Fruit Bowl","114-6916253-1729029","NQ",WF,[["Open QR code","bowl.jpeg"]]],
- ["Roter Mond 4 Slice Toaster","114-6916253-1729029","NQ",WF,[["Open QR code","green-toaster.png"]]],
- ["Mifoci 4 Pack Stainless","114-6916253-1729029","NQ",WF,[["Open QR code","metal-containers.jpeg"]]],
- ["YSAGi Desk Protector + Amazer Shower Hooks","114-3849622-9712262 / 114-3043692-9661850","NQ","One return, one QR for both items. "+WF,[]],
- ["Bear Mini Rice Cooker (replacement)","114-8721578-4227465","NQ",WF,[["Open QR code","rice-cooker.jpeg"]]]]],
-["UPS, ANY LOCATION (box + QR)",[
- ["Flash Furniture Mindy Kids Navy","114-4765351-7761851","BQ","Remove any other shipping labels.",[["Open QR code","table-chairs.jpeg"]]],
- ["Cuisinart Chef's Classic Stainless","114-9665192-6715416","BQ","Remove any other shipping labels.",[["Open QR code","pots-and-pans.jpeg"]]],
- ["Can Opener, 3-In-1","114-6916253-1729029","BQ","Remove any other shipping labels.",[["Open QR code","can-opener.jpeg"]]],
- ["Toddleroo by North States","114-1744150-0169013","BQ","Remove any other shipping labels.",[]]]],
-["UPS DROP-OFF (box + PRINTED label)",[
- ["Amazon Basics 4 Slice Toaster","114-9716399-3885021","BP","Tape label flat on the box. Two label files exist (one per toaster): check the order # on the label.",[["Open label 1","black-toaster-label.pdf"],["Open label 2","toaster.pdf"]]],
- ["Cuisinart 4-Slice Stainless","114-6686067-8025011","BP","Tape label flat on the box. Two label files exist (one per toaster): check the order # on the label.",[["Open label 1","black-toaster-label.pdf"],["Open label 2","toaster.pdf"]]]]],
-["THE UPS STORE ONLY (box + QR)",[
- ["Porcelain Dinnerware + Cottonelle Toilet Paper","114-5757847-5721040","BQ","One return. Pack both in one box.",[]],
- ["Bounty Paper Towels","114-5757847-5721040","BQ","Must be The UPS Store.",[]]]],
-["UPS, RETURN TO SELLER",[
- ["Minnetonka Men's Sheepskin","114-8933077-6177004","PS","Print the label from the Amazon email.",[],"Label not in folder."]]],
-["STAPLES",[
- ["EverGrace Cross Stitch","114-4719297-4513863","NQ",WF,[]]]],
-["KOHL'S (no box)",[
- ["WDCOZY Cloud Soft Quilt Set","114-4124702-6240256","NQ",WF,[["Open QR code","blue-blanket.jpeg"]]]]],
-["TO VERIFY",[
- ["Marscamd Motorcycle Dry Bag","114-5394424-8116219","NQ","The UPS Store, 10332 Main St, Fairfax VA. No drop-off confirmation found.",[]]]],
-["OTHER FILES (not matched to an item yet)",[
- ["Dish Rack","","","",[["Open file","dish-rack.jpeg"]]],
- ["Training Mat","","","",[["Open file","training-mat.jpeg"]]],
- ["Ice Packs","","","",[["Open file","ice-packs.pdf"]]],
- ["Brown bedding","","","",[["Open file","brown-bedding.png"]]]]]
+var L={
+ WF:["Whole Foods","WF"],
+ UPS:["UPS","UPS"],
+ UPSL:["UPS (print label)","UPSL"],
+ UPSS:["UPS Store only","UPSS"],
+ SELL:["UPS (to seller)","UPSL"],
+ ST:["Staples","ST"],
+ KO:["Kohl's","KO"],
+ PK:["UPS home pickup","PK"],
+ VF:["Verify: UPS Store","VF"]
+};
+var I=[
+ ["10 Sets Glass Food Containers","WF"],
+ ["Amazon Basics 4 Slice Toaster","UPSL"],
+ ["Amazon Basics Mint Dental Flosses","WF"],
+ ["Apple Magic Keyboard","WF"],
+ ["Bear Mini Rice Cooker","WF"],
+ ["Bounty Paper Towels","UPSS"],
+ ["Can Opener, 3-In-1","UPS"],
+ ["Cuisinart 4-Slice Stainless","UPSL"],
+ ["Cuisinart Chef's Classic Stainless","UPS"],
+ ["EverGrace Cross Stitch","ST"],
+ ["Flash Furniture Mindy Kids Navy","UPS"],
+ ["MALACASA Fruit Bowl","WF"],
+ ["Marscamd Motorcycle Dry Bag","VF"],
+ ["Mifoci 4 Pack Stainless","WF"],
+ ["Minnetonka Men's Sheepskin","SELL"],
+ ["Porcelain Dinnerware + Cottonelle Toilet Paper","UPSS"],
+ ["Roter Mond 4 Slice Toaster","WF"],
+ ["THETCHRY Walnut Cutting Boards","WF"],
+ ["Toddleroo by North States","UPS"],
+ ["VELOHEIM Bamboo Side Table","PK"],
+ ["WDCOZY Cloud Soft Quilt Set","KO"],
+ ["YSAGi Desk Protector + Amazer Shower Hooks","WF"]
 ];
-var K="returns-links-v1",S={};
-try{S=JSON.parse(localStorage.getItem(K)||"{}")||{}}catch(e){}
-function esc(t){return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;")}
-var h="",n=0;
-D.forEach(function(g){
- h+="<h2>"+g[0]+"</h2>";
- g[1].forEach(function(it){
-  var i=n++,d=S[i];
-  h+='<div class="c'+(d?" done":"")+'" data-i="'+i+'"><div class="n">'+esc(it[0])+'</div>'+
-   (it[1]?'<div class="o">Order '+esc(it[1])+'</div>':"")+
-   '<div class="tg">'+it[2].split("").map(function(c){return '<span class="t t'+c+'">'+T[c]+'</span>'}).join("")+'</div>'+
-   (it[3]?'<div class="x">'+esc(it[3])+'</div>':"");
-  if(it[4].length){it[4].forEach(function(f){h+='<a class="b" href="files/'+f[1]+'">'+f[0]+'</a>'})}
-  else if(g[0].indexOf("OTHER")<0){h+='<div class="m">'+(it[5]||"No QR file yet.")+'</div>'}
-  if(g[0].indexOf("OTHER")<0){h+='<label><input type="checkbox"'+(d?" checked":"")+'> Returned</label>'}
-  h+='</div>';
- });
-});
-var app=document.getElementById("app");app.innerHTML=h;
-app.addEventListener("change",function(e){
- var c=e.target.closest(".c");if(!c)return;
- S[c.getAttribute("data-i")]=e.target.checked;c.classList.toggle("done",e.target.checked);
- try{localStorage.setItem(K,JSON.stringify(S))}catch(x){}
-});
+I.sort(function(a,b){return a[0].localeCompare(b[0],undefined,{numeric:true,sensitivity:"base"})});
+document.getElementById("app").innerHTML=I.map(function(x){
+ var l=L[x[1]];
+ return '<div class="r"><span class="n">'+x[0].replace(/&/g,"&amp;")+'</span><span class="l '+l[1]+'">'+l[0]+'</span></div>';
+}).join("");
 </script></body></html>
