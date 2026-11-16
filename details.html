@@ -11,6 +11,4 @@ var fb=x.f.map(function(f){used[f]=1;return '<a class="b" href="files/'+f+'">Ope
 if(!x.f.length)fb='<span class="tag tag3">QR FILE NOT ADDED YET</span>';
 return '<div class="card'+(st[x.n]?' done':'')+'" id="c'+k+'"><h3>'+x.n+(x.q>1?' (x'+x.q+')':'')+'</h3><span class="tag">WHOLE FOODS</span><span class="tag tag2">NO BOX</span><span class="tag tag2">NO LABEL</span><span class="tag tag2">QR CODE</span><br>'+fb+'<a class="b g" href="'+x.i+'">See Amazon invoice</a><label><input type="checkbox" '+(st[x.n]?'checked':'')+' onchange="tg('+k+',this.checked)"> Returned</label></div>'}).join("");
 function tg(k,v){st[s[k].n]=v;save();document.getElementById("c"+k).className="card"+(v?" done":"")}
-var o=ALLFILES.filter(function(f){return !used[f]});
-if(o.length)document.getElementById("O").innerHTML='<h2>ALL QR FILES</h2>'+o.map(function(f){return '<a class="b g" href="files/'+f+'">'+f+'</a>'}).join("");
 </script></body></html>
