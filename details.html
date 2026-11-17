@@ -1,14 +1,14 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Return details</title>
-<style>body{font-family:-apple-system,Arial,sans-serif;margin:0;padding:16px;background:#f4f4f4;max-width:640px;margin:auto}h1{font-size:24px}.card{background:#fff;border-radius:10px;padding:14px;margin:10px 0}.card.done{opacity:.45}h3{margin:0 0 6px;font-size:18px}.tag{display:inline-block;background:#0a7d3b;color:#fff;font-size:13px;padding:3px 8px;border-radius:6px;margin:2px 4px 2px 0}.tag2{background:#555}.tag3{background:#b45309}a.b{display:block;text-align:center;background:#1a56db;color:#fff;font-size:17px;padding:12px;border-radius:10px;text-decoration:none;margin:8px 0}a.g{background:#6b7280}label{display:block;font-size:16px;margin-top:10px}input{width:20px;height:20px;vertical-align:middle}h2{font-size:16px;color:#555;margin-top:28px}</style></head><body>
-<h1>Return details</h1><a class="b g" href="index.html">Back to list</a><div id="C"></div><div id="O"></div>
-<script src="data.js"></script><script src="files.js"></script><script>
+<style>body{font-family:-apple-system,Arial,sans-serif;margin:0;padding:16px;background:#f4f4f4;max-width:640px;margin:auto}h1{font-size:24px}.card{background:#fff;border-radius:10px;padding:14px;margin:10px 0}.card.done{opacity:.45}h3{margin:0 0 6px;font-size:18px}.tag{display:inline-block;background:#0a7d3b;color:#fff;font-size:13px;padding:3px 8px;border-radius:6px;margin:2px 4px 2px 0}.tag2{background:#555}.tag3{background:#b45309}.tagk{background:#7c3aed}a.b{display:block;text-align:center;background:#1a56db;color:#fff;font-size:17px;padding:12px;border-radius:10px;text-decoration:none;margin:8px 0}a.g{background:#6b7280}label{display:block;font-size:16px;margin-top:10px}input{width:20px;height:20px;vertical-align:middle}</style></head><body>
+<h1>Return details</h1><a class="b g" href="index.html">Back to list</a><div id="C"></div>
+<script src="data.js"></script><script>
 var KEY="returns-links-v3";var st={};try{st=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
 function save(){try{localStorage.setItem(KEY,JSON.stringify(st))}catch(e){}}
 var s=D.slice().sort(function(a,b){return a.n.toLowerCase()<b.n.toLowerCase()?-1:1});
-var used={};
 document.getElementById("C").innerHTML=s.map(function(x,k){
-var fb=x.f.map(function(f){used[f]=1;return '<a class="b" href="files/'+f+'">Open QR code</a>'}).join("");
+var fb=x.f.map(function(f){return '<a class="b" href="files/'+f+'">Open QR code</a>'}).join("");
 if(!x.f.length)fb='<span class="tag tag3">QR FILE NOT ADDED YET</span>';
-return '<div class="card'+(st[x.n]?' done':'')+'" id="c'+k+'"><h3>'+x.n+(x.q>1?' (x'+x.q+')':'')+'</h3><span class="tag">WHOLE FOODS</span><span class="tag tag2">NO BOX</span><span class="tag tag2">NO LABEL</span><span class="tag tag2">QR CODE</span><br>'+fb+'<a class="b g" href="'+x.i+'">See Amazon invoice</a><label><input type="checkbox" '+(st[x.n]?'checked':'')+' onchange="tg('+k+',this.checked)"> Returned</label></div>'}).join("");
+var inv=x.i?'<a class="b g" href="'+x.i+'">See Amazon invoice</a>':'';
+return '<div class="card'+(st[x.n]?' done':'')+'" id="c'+k+'"><h3>'+x.n+(x.q>1?' (x'+x.q+')':'')+'</h3><span class="tag'+(x.l==="KOHLS"?' tagk':'')+'">'+x.l+'</span><span class="tag tag2">NO BOX</span><span class="tag tag2">NO LABEL</span><span class="tag tag2">QR CODE</span><br>'+fb+inv+'<label><input type="checkbox" '+(st[x.n]?'checked':'')+' onchange="tg('+k+',this.checked)"> Returned</label></div>'}).join("");
 function tg(k,v){st[s[k].n]=v;save();document.getElementById("c"+k).className="card"+(v?" done":"")}
 </script></body></html>
