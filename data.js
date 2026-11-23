@@ -9,6 +9,8 @@ var D=[
 {n:"Light Bulbs 2",q:1,l:"WHOLE FOODS",f:["r2-bulbs-2.jpeg"],i:""},
 {n:"Basket",q:1,l:"WHOLE FOODS",f:["r2-basket.jpeg"],i:""},
 {n:"Record Frames",q:1,l:"WHOLE FOODS",f:["r2-record-frames.jpeg"],i:""},
+{n:"Door Mat",q:1,l:"WHOLE FOODS",f:["r2-door-mat.jpeg"],i:""},
+{n:"Plastic Protectors",q:1,l:"WHOLE FOODS",f:["r2-plastic-protectors.jpeg"],i:""},
 {n:"Luggage Rack",q:1,l:"KOHLS",f:["r2-luggage-rack.jpeg"],i:""},
 {n:"Red Planter",q:1,l:"KOHLS",f:["r2-red-planter.jpeg"],i:""},
 {n:"Dog Bed",q:1,l:"KOHLS",f:["r2-dog-bed.jpeg"],i:""},
